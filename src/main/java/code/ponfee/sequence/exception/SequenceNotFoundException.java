@@ -4,7 +4,7 @@ package code.ponfee.sequence.exception;
  * 序列没有找到
  * @author fupf
  */
-public class SequenceNotFoundException extends Exception {
+public class SequenceNotFoundException extends RuntimeException {
 
     private static final long serialVersionUID = 8202389462734865197L;
 
