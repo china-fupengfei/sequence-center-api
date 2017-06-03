@@ -12,7 +12,7 @@
 
     <profiles>
         <profile>
-            <id>dev</id>
+            <id>develop</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -28,7 +28,7 @@
         </profile>
 
         <profile>
-            <id>online</id>
+            <id>product</id>
             <distributionManagement>
                 <repository>
                     <id>releases</id>
@@ -43,7 +43,7 @@
 
     <!-- 插件 -->
     <build>
-        <finalName>sequence-center-api</finalName>
+        <finalName>${project.artifactId}-${publish.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
